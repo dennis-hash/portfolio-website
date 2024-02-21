@@ -1,10 +1,10 @@
 <div class="d-flex flex-column min-vh-100" [style.background-color]="backgroundColor" >
-  <app-header></app-header>
-  <div class="d-flex flex-grow-1 justify-content-center align-items-center" style="margin: 20px auto; padding-top: 3rem; max-width: 90%; z-index: 1;">
-    <div class="position-fixed top-50 start-0 translate-middle-y border border-dark" style="flex: 1;">
-      <!-- <app-animation></app-animation> -->
+  <app-header (themeToggled)="onThemeToggled($event)"></app-header>
+  <div class="d-flex flex-grow-1 justify-content-center align-items-center" [style.background-color]="backgroundColor" [style.color]="textColor" style="margin: 20px auto; padding-top: 3rem; max-width: 90%; z-index: 1;">
+    <div class="position-fixed top-50 start-0 translate-middle-y" style="flex: 1;">
+      <app-animation></app-animation>
     </div>
-    <div class="flex-grow-7 border border-dark" style="margin-left: calc(100% / 3); padding-left: 100px;">
+    <div class="flex-grow-7 " style="margin-left: calc(100% / 3); padding-left: 100px;">
       <router-outlet></router-outlet>
     </div>
   </div>

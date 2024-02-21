@@ -44,43 +44,19 @@ export class AnimationComponent implements OnInit{
   initScene() {
     // Create scene
     this.scene = new THREE.Scene();
-   
-    this.scene.background = new THREE.Color(0xF0E7DB);
-
-    //const material = new THREE.MeshToonMaterial();
+    this.scene.background = new THREE.Color(0xF0E7DB); // Default background color
 
     // Create camera
     this.camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
     this.camera.position.set(5, 4, 5);
 
     // Create renderer
-    this.renderer = new THREE.WebGLRenderer({ canvas: this.canvasRef?.nativeElement,antialias: true });
-    this.renderer.setSize(window.innerWidth * 0.4, window.innerHeight * 0.5);
-    this.renderer.setClearColor(0xffffff);
+    this.renderer = new THREE.WebGLRenderer({ canvas: this.canvasRef?.nativeElement, antialias: true });
+    this.renderer.setSize(window.innerWidth * 0.4, window.innerHeight * 0.7);
 
     // Create controls
     this.controls = new OrbitControls(this.camera, this.renderer.domElement);
     this.controls.update();
-
-    // Add lights
-    const directionalLight = new THREE.DirectionalLight(0xffffff, 0.5);
-    directionalLight.position.set(0, 1, 0); // Adjust light position as needed
-    directionalLight.castShadow = false;
-    this.scene.add(directionalLight);
-
-
-
-    const ambientLight = new THREE.AmbientLight(0xcccccc, 1); // Adjust intensity as needed
-    ambientLight.castShadow = false; 
-    this.scene.add(ambientLight);
-
-    // this.renderer = new THREE.WebGLRenderer({ canvas: this.canvasRef?.nativeElement, antialias: true });
-    // this.renderer.setSize(window.innerWidth, window.innerHeight);
-    // this.renderer.setClearColor(0xffffff);
-
-    const hemisphereLight = new THREE.HemisphereLight(0xffffff, 0x000000, 0.1);
-    hemisphereLight.castShadow = false;
-    this.scene.add(hemisphereLight);
   }
 
   loadModel() {
@@ -110,6 +86,12 @@ export class AnimationComponent implements OnInit{
       this.renderer.render(this.scene, this.camera);
     };
     animate();
+  }
+
+  // Method to handle theme toggling
+  onThemeToggled(isDarkTheme: boolean) {
+    const backgroundColor = isDarkTheme ? 0x000000 : 0xF0E7DB; 
+    this.scene.background = new THREE.Color(backgroundColor);
   }
 }
   

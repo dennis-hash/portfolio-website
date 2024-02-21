@@ -8,7 +8,7 @@ import { DomSanitizer } from '@angular/platform-browser';
   styleUrls: ['./toggle-button.component.scss']
 })
 export class ToggleButtonComponent {
-  @Output() themeToggled = new EventEmitter<boolean>(); // Emitting boolean value for theme
+  //@Output() themeToggled = new EventEmitter<boolean>(); // Emitting boolean value for theme
   isDarkTheme: boolean = false;
   iconSource: string = '../assets/light_mode.svg';
   buttonColor: string = 'orange';
@@ -17,6 +17,6 @@ export class ToggleButtonComponent {
     this.isDarkTheme = !this.isDarkTheme;
     this.iconSource = this.isDarkTheme ? '../assets/dark_mode.svg' : '../assets/light_mode.svg';
     this.buttonColor = this.isDarkTheme ? 'purple' : 'orange'; // change color here
-    this.themeToggled.emit(this.isDarkTheme); // Emitting boolean value for theme
+   // this.themeToggled.emit(this.isDarkTheme); // Emitting boolean value for theme
   }
 }
