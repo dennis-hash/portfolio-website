@@ -1,0 +1,26 @@
+
+<div class="two-columns" style="border: 1px solid black;">
+   <h2 style="display: inline; margin-right: 5px;">{{ project?.title }}</h2>
+    <h5 style="background-color: #edf2f7; display: inline; border-radius: 5px;">{{ project?.year }}</h5>
+    <p>{{ project?.description1 }}</p>
+    <ul style="list-style-type:none ; padding: 0;">
+        <li *ngFor="let technology of project?.details?.technologies" style="display: inline-block; background-color: #c6f6d5; padding: 5px; margin-right: 5px;">{{ technology }}</li>
+    </ul> 
+   
+    <div class="links">
+        <a href="{{ project?.details?.github }}" style="border: 1px solid black;border-radius: 3px; padding: 5px; margin-right: 10px; color: black; text-decoration: none;">GitHub <fa-icon [icon]="faExternalLink"></fa-icon></a>
+        <a href="{{ project?.details?.document }}" style="border: 1px solid black;border-radius: 3px; padding: 5px; margin-right: 10px; color: black; text-decoration: none;">Document <fa-icon [icon]="faExternalLink"></fa-icon></a>
+        <a href="{{ project?.details?.apiDocument }}" style="border: 1px solid black;border-radius: 3px; padding: 5px; margin-right: 10px; color: black; text-decoration: none;">Api Docs <fa-icon [icon]="faExternalLink"></fa-icon></a>
+        <a href="{{ project?.details?.website }}" style="border: 1px solid black;border-radius: 3px; padding: 5px; color: black; text-decoration: none;">Hosted <fa-icon [icon]="faExternalLink"></fa-icon></a>
+    </div>
+    <div class="images" style="margin-top: 10px;">
+        <img *ngFor="let image of project?.details?.images" [src]="image" alt="Project image" style="width: 500px; height: auto; margin-bottom: 10px; border-radius: 3px;display:block; ">
+    </div>
+</div>
+
+
+
+
+
+
+

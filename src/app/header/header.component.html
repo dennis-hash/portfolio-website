@@ -1,0 +1,22 @@
+<nav class="navbar" [style.background-color]="bcolor">
+    <div class="container">
+      <div class="logo">
+        <!-- <a (click)="goToHome()" routerLink="/home" routerLinkActive="selected">Home</a> -->
+      </div>
+  
+      <div class="links" >
+        <a (click)="goToHome()" routerLink="/home" routerLinkActive="selected" [style.color]="color"> <fa-icon [icon]="faRocket"></fa-icon>Home</a>
+        <a (click)="goToProjects()" routerLink="/projects" routerLinkActive="selected" [style.color]="color">Projects</a>
+        <!-- <a (click)="goToArticles()" routerLink="/articles" routerLinkActive="selected">Articles</a> -->
+        <a href="https://github.com/dennis-hash" target="_blank" routerLink="/github" routerLinkActive="selected" [style.color]="color">
+          <fa-icon [icon]="faGithub"></fa-icon> Github
+        </a>
+      </div>
+  
+      <div class="theme-toggle">
+        <app-toggle-button (click)="toggleTheme()"></app-toggle-button>
+      </div>
+    </div>
+  </nav>
+
+  

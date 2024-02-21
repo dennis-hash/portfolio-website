@@ -1,0 +1,58 @@
+
+.navbar {
+    width: 100%;
+    position: fixed;
+    background-color: #ffffff40;
+    backdrop-filter: blur(10px);
+    z-index: 2;
+  }
+  // .navbar {
+  //   width: 100%;
+  //     position: fixed;
+  //     background-color: #20202380;
+  //     backdrop-filter: blur(10px);
+  //     z-index: 2;
+  //   }
+  
+  .container {
+    display: flex;
+    padding: 1 rem;
+    max-width: 980px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+  }
+  
+  .logo a {
+    letter-spacing: -0.05em;
+    padding: 0.5rem;
+    text-decoration: none;
+    
+  }
+  
+  .links a {
+    margin-right: 14px;
+  }
+  .links a {
+    padding: 0.5rem;
+    color: #202023;
+    text-decoration: none;
+    // border:1px solid black;
+   
+  }
+
+  .selected{
+    background-color: #64d5ca;
+  }
+  
+  .links a.active {
+    background-color: #64d5ca; // grassTeal color
+    color: #202023;
+  }
+  
+  .links a fa-icon {
+    font-size: 1.2em; 
+    vertical-align: top; 
+    
+}

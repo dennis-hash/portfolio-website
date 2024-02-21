@@ -1,0 +1,15 @@
+<!-- <div class="container" style="display: flex; flex-direction: column; justify-content: center; align-items: center; border:2px solid black;">
+   -->
+    <div class="two-columns" >
+      <div *ngFor="let project of getProjects()" class="grid-item" (click)="onSelect(project.id)" routerLink="/project-details">
+          <img [src]="project.image" alt="{{ project.title }}" style="width: 100%; height: 70%; border-radius: 10px;">
+          <div class="title">{{ project.title }}</div>
+          <div class="description">{{ project.description }}</div>
+        </div>
+        
+      </div>
+<!-- </div> -->
+
+
+  
+  

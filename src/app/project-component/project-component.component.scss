@@ -1,0 +1,53 @@
+
+  .conatainer {
+    animation: slideIn 3.5s ease;
+  }
+  
+  @keyframes slideIn {
+    0% {
+      transform: translateY(3%);
+      opacity: 50;
+    }
+    100% {
+      transform: translateY(5);
+      opacity: 50;
+    }
+  }
+  
+.two-columns {
+    display: flex;
+    flex-wrap: wrap;
+    width: 65%; 
+   
+  }
+  .grid-item {
+    width: 45%;
+    box-sizing: border-box;
+    margin: 2.5%;
+    border-radius: 10px;
+   
+  }
+
+  .description{
+    font-family: Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 300;
+    line-height: 1.5;
+    text-align: center;
+  }
+  .title{
+    font-family: Arial, sans-serif;
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+
+  
+  @media screen and (max-width: 600px) {
+    .grid-item {
+      width: 100%;
+    }
+  }
+  

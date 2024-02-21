@@ -1,0 +1,21 @@
+
+
+.links a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.links a:hover {
+    color: blue;
+}
+
+.links fa-icon {
+    font-size: 0.8em; 
+    vertical-align: top; 
+    transform: translateY(-1px);
+}
+
+.links fa-icon:hover {
+    color: blue;
+}

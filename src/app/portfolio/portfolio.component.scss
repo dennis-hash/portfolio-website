@@ -1,0 +1,14 @@
+.conatainerre {
+  animation: slideIn 3.5s ease;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(3%);
+    opacity: 50;
+  }
+  100% {
+    transform: translateY(5);
+    opacity: 50;
+  }
+}
