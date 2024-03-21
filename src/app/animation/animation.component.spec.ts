@@ -6,6 +6,8 @@ describe('AnimationComponent', () => {
   let component: AnimationComponent;
   let fixture: ComponentFixture<AnimationComponent>;
 
+  //ddff
+
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [ AnimationComponent ]
