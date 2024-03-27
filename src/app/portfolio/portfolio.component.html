@@ -1,13 +1,12 @@
-<!-- <div class="conatainerre" style="display: flex; flex-direction: column; justify-content: center; align-items: center;border:2px solid black;">
+<div class="conatainerre">
     
-     -->
-    <div class="hello" style="display: flex; justify-content: center; align-items: center; border-radius: 10px; border: none; text-align: center;width: 65%; height: 50px; background-color: #ffffff80;  backdrop-filter: blur(20px);">
+    <div class="hello" [style.background-color]="color" style="display: flex; justify-content: center; align-items: center; border-radius: 10px; border: none; text-align: center;width: 65%; height: 50px;  backdrop-filter: blur(20px);">
         <a>Hello, I'm a fullstack software engineer based in Kenya </a>
     </div>
 
     <div class="container" style="width: 50%;margin: 15px; display: flex; justify-content: flex-start; align-items: center;">
         <div class="name" style="flex: 1; display: flex; flex-direction: column;">
-            <h3 style="font-weight: 500; font-size: 1.875rem;">Dennis Kariuki</h3>
+            <h4 style="font-weight: 500; font-size: 1.875rem;">Dennis Kariuki</h4>
             <a style="font-weight: 300; font-size: 1.375rem;">Digital Craftsman</a>
         </div>
         <div class="profile-pic" style="border: 2px solid black; border-color: #E2E8F0; border-radius: 50%; width: 100px; height: 100px; background-image: url('assets/a.jpeg'); background-size: cover; background-position: center;"></div>
@@ -23,10 +22,10 @@
             <p><strong><u style="text-decoration-thickness: 3px;">Techonologies</u></strong></p>
             <p>Some of the techonologies I use:</p>
             <div class="techonologies" style="display: flex; flex-direction: column;">
-                <a>Frameworks: <strong>Laravel, SpringBoot and Angular</strong></a>
-                <a>Databases: <strong>MySQL, Firebase and Postgresql</strong></a>
+                <a>Frameworks: <strong>Laravel, SpringBoot, Flutter and Angular</strong></a>
+                <a>Databases: <strong>MySQL, Firebase, Mongodb and Postgresql</strong></a>
                 <a>Cloud Platforms: <strong>Google Cloud Platform</strong></a>
-                <a>Languages: <strong>PHP, Java, Typescript and Python</strong></a>
+                <a>Languages: <strong>PHP, Java, Dart and Typescript</strong></a>
             </div>
 
         </div>
@@ -47,17 +46,18 @@
 
     <div class="links"  style="padding-top: 2.5%; width: 65%; display: flex; flex-direction: column; justify-content: center; ">
         <p><strong><u style="text-decoration-thickness: 3px; ">Links</u></strong></p>
-        <a href="https://github.com/dennis-hash" target="_blank" style="text-decoration: none;">
-            <img src="assets/github.svg" alt="Github" style="width: 17px; height: 17px; "><a style="font-weight: 500; font-size: 1.075rem; text-decoration: none; margin: 4px; background-color: rgb(255, 253, 231); border-radius: 10%;">Github</a>
-        </a>
-       
-        <a href="https://twitter.com/dennis_kariuki_" target="_blank"  style="text-decoration: none;  padding-top: 2%;">
-            <img src="assets/twitter.svg" alt="twitter" style="width: 17px; height: 17px; "> <a style="font-weight: 500; font-size: 1.075rem;text-decoration: none; margin: 4px; background-color: rgb(255, 253, 231); border-radius: 10%;">Twitter</a>
-        </a>
+        <a href="https://github.com/dennis-hash"  style="color: #64d5ca; text-decoration: none; ">
+            <fa-icon [icon]="faGithub"></fa-icon> Github
+          </a>
 
-        <a href="https://www.linkedin.com/in/dennis-kariuki-a3963b212" target="_blank"  style="text-decoration: none;  padding-top: 2%;">
-            <img src="assets/linkedi.svg" alt="linkedin" style="width: 17px; height: 17px; "> <a style="font-weight: 500; font-size: 1.075rem; text-decoration: none; margin: 4px; background-color: rgb(255, 253, 231); border-radius: 10%;">LinkedIn</a>
-        </a>
+          <a href="https://twitter.com/dennis_kariuki"  style="color: #64d5ca; text-decoration: none; ">
+            <fa-icon [icon]="faTwitter"></fa-icon> Twitter(X)
+          </a>
+
+          <a href="https://twitter.com/dennis_kariuki"  style="color: #64d5ca; text-decoration: none; ">
+            <fa-icon [icon]="faLinkedin"></fa-icon> LinkedIn
+          </a>
+       
       
     </div>
-<!-- </div> -->
+</div>

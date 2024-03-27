@@ -17,7 +17,7 @@ import * as THREE from 'three';
 import { GLTFLoader, GLTF } from 'three/examples/jsm/loaders/GLTFLoader.js';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import { CSS2DRenderer } from 'three/examples/jsm/renderers/CSS2DRenderer.js';
-
+import { ThemeService } from '../shared/theme.service';
 
 @Component({
   selector: 'app-animation',
@@ -33,12 +33,16 @@ export class AnimationComponent implements OnInit{
   renderer!: THREE.WebGLRenderer;
   controls!: OrbitControls;
 
-  constructor() { }
+  constructor(private themeService: ThemeService) { }
 
   ngOnInit(): void {
     this.initScene();
     this.loadModel();
     this.render();
+
+    this.themeService.getDarkTheme().subscribe(isDarkTheme => {
+      this.onThemeToggled(isDarkTheme);
+    });
   }
 
   initScene() {
@@ -48,7 +52,7 @@ export class AnimationComponent implements OnInit{
 
     // Create camera
     this.camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-    this.camera.position.set(5, 4, 5);
+    this.camera.position.set(5, 5, 5);
 
     // Create renderer
     this.renderer = new THREE.WebGLRenderer({ canvas: this.canvasRef?.nativeElement, antialias: true });
@@ -57,6 +61,20 @@ export class AnimationComponent implements OnInit{
     // Create controls
     this.controls = new OrbitControls(this.camera, this.renderer.domElement);
     this.controls.update();
+
+     // Add ambient light
+    const ambientLight = new THREE.AmbientLight(0xffffff, 0.7); // soft white light
+    this.scene.add(ambientLight);
+
+    // Add directional light
+    const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
+    directionalLight.position.set(0, 1, 0); // Adjust the position as needed
+    this.scene.add(directionalLight);
+
+     // Add point light to illuminate the back
+    const pointLight = new THREE.PointLight(0xffffff, 0.6, 10);
+    pointLight.position.set(1, 1, 5); // Position the light to target the back side
+    this.scene.add(pointLight);
   }
 
   loadModel() {
@@ -81,7 +99,7 @@ export class AnimationComponent implements OnInit{
   render() {
     const animate = () => {
       requestAnimationFrame(animate);
-      this.scene.rotation.y += 0.01;
+      this.scene.rotation.y += 0.007;
       this.controls.update();
       this.renderer.render(this.scene, this.camera);
     };
@@ -90,7 +108,7 @@ export class AnimationComponent implements OnInit{
 
   // Method to handle theme toggling
   onThemeToggled(isDarkTheme: boolean) {
-    const backgroundColor = isDarkTheme ? 0x000000 : 0xF0E7DB; 
+    const backgroundColor = isDarkTheme ? 0x202023 : 0xF0E7DB; 
     this.scene.background = new THREE.Color(backgroundColor);
   }
 }

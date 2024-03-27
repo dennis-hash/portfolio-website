@@ -2,6 +2,7 @@ import { Component, Output, EventEmitter } from '@angular/core';
 import { Router } from '@angular/router';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faLemon } from '@fortawesome/free-solid-svg-icons';
+import { ThemeService } from '../shared/theme.service';
 
 
 @Component({
@@ -15,7 +16,8 @@ export class HeaderComponent {
   faGithub = faGithub;
   faRocket = faLemon;
 
-  constructor(private router: Router) {}
+  //constructor(private router: Router) {}
+  constructor(private themeService: ThemeService, private router: Router) {}
 
   @Output() themeToggled = new EventEmitter<boolean>();
   isDarkTheme: boolean = false;
@@ -44,11 +46,12 @@ export class HeaderComponent {
     
   }
 
+
   toggleTheme() {
     this.isDarkTheme = !this.isDarkTheme;
     this.color = this.isDarkTheme ? 'white' : 'black'; 
     this.bcolor = this.isDarkTheme ? '#20202380' : '#ffffff40'; 
-    this.themeToggled.emit(this.isDarkTheme);
+    this.themeService.setDarkTheme(this.isDarkTheme);
   }
 
 }
