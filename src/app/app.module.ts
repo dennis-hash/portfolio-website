@@ -17,6 +17,7 @@ import { ProjectDetailsComponent } from './project-details/project-details.compo
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { DogLoaderComponent } from './dog-loader/dog-loader.component';
 import { DogcontainerComponent } from './dogcontainer/dogcontainer.component';
+// import { PdfViewerModule } from 'ng2-pdf-viewer';
 
 
 
@@ -43,9 +44,7 @@ import { DogcontainerComponent } from './dogcontainer/dogcontainer.component';
     MatIconModule,
     BrowserAnimationsModule,
     FontAwesomeModule,
-   
-
- 
+    //PdfViewerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

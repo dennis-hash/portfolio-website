@@ -8,85 +8,21 @@ export class ProjectService {
     private projects: Project[] = [
         {
           id: 1,
-          title: 'SiteManager',
+          title: 'Site Manager',
           year:'2023',
           description: 'An app that helps in management of site like work places',
-          description1: 'An app that helps in management of site like work places',
-          image: 'assets/a.jpeg',
+          description1: 'The SITE MANAGER app is an innovative tool designed to enhance the organization and management of site-like work places, which typically feature a contractor or project owner responsible for project finances, a foreman overseeing daily operations, workers earning wages on a daily or hourly basis, payment distribution at regular intervals (usually weekly), and daily clock-ins for workers. The contractor or project owner relies on receiving a list of workers and their pay rates in order to effectively allocate funds and ensure timely payment processing.',
+          image: 'assets/sitem/s1.webp',
           details: {
-            images: ['assets/a.jpeg', 'assets/a.jpeg'],
+            images: ['assets/sitem/s1.webp', 'assets/sitem/s2.webp', 'assets/sitem/s3.webp', 'assets/sitem/s4.webp', 'assets/sitem/s5.webp', 'assets/sitem/s6.webp', 'assets/sitem/s7.webp'],
             technologies: ['Flutter', 'Laravel','MySQL'],
             github: 'https://github.com/username/project1',
             document: 'https://github.com/username/project1',
-            apiDocument: 'https://github.com/username/project1',
-            website: 'https://project1.com'
+            apiDocument: 'http://172.105.90.112/site-manager-backend/SiteManager/public/swagger/',
+            website: 'https://play.google.com/store/apps/details?id=com.sitemaster.sma&pcampaignid=web_share'
           }
         },
-        {
-          id: 2,
-          title: 'Task Pro',
-          year:'2024',
-          description: 'For Software Development Life Cycle Management',
-          description1: 'An app that helps in management of site like work places',
-          image: 'assets/d.png',
-          details: {
-            images: ['path/to/project2/image1.jpg', 'path/to/project2/image2.jpg'],
-            technologies: ['Angular', 'Spring Boot', 'Postgresql'],
-            github: 'https://github.com/username/project2',
-            document: 'https://github.com/username/project1',
-            apiDocument: 'https://github.com/username/project1',
-            website: 'https://project2.com'
-          }
-        },
-        {
-          id: 3,
-          title: 'FastFood',
-          year:'2023',
-          description: 'Food Ordering App with an AI assistant',
-          description1: 'An app that helps in management of site like work places',
-          image: 'assets/c.jpeg',
-          details: {
-            images: ['path/to/project1/image1.jpg', 'path/to/project1/image2.jpg'],
-            technologies: ['Flutter', 'Firebase'],
-            github: 'https://github.com/username/project1',
-            document: 'https://github.com/username/project1',
-            apiDocument: 'https://github.com/username/project1',
-            website: 'https://project1.com'
-          }
-        },
-        {
-          id: 4,
-          title: 'UoN Chatbot',
-          year:'2023',
-          description: 'Your AI friend, simplifying registration and answering your questions with a smile',
-          description1: 'An app that helps in management of site like work places',
-          image: 'assets/c.jpeg',
-          details: {
-            images: ['path/to/project1/image1.jpg', 'path/to/project1/image2.jpg'],
-            technologies: ['Flutter', 'Firebase'],
-            github: 'https://github.com/username/project1',
-            document: 'https://github.com/username/project1',
-            apiDocument: 'https://github.com/username/project1',
-            website: 'https://project1.com'
-          }
-        },
-        {
-          id: 5,
-          title: 'Farm Direct',
-          year:'2022',
-          description: 'A platform that enables farmers to sell their products directly to consumers',
-          description1: 'An app that helps in management of site like work places',
-          image: 'assets/c.jpeg',
-          details: {
-            images: ['path/to/project1/image1.jpg', 'path/to/project1/image2.jpg'],
-            technologies: ['PHP', 'Javascript','MySQL'],
-            github: 'https://github.com/username/project1',
-            document: 'https://github.com/username/project1',
-            apiDocument: 'https://github.com/username/project1',
-            website: 'https://project1.com'
-          }
-        },
-        
+
       ];
 
   constructor() {}
