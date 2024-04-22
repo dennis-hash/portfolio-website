@@ -1,7 +1,8 @@
 export interface Project {
     id: number;
     title: string;
-    year:string;
+    year:string | null;
+    role:string;
     description: string;
     description1: string;
     image: string;
@@ -9,14 +10,16 @@ export interface Project {
       images: string[];
       technologies: string[];
       github: string;
-      document: string,
-      apiDocument:string,
+      document: string | null,
+      apiDocument:string | null,
       website: string;
     };
   }
+
   // Example usage:
 let project: Project = {
     title: "Project Title",
+    role:"role",
     description: "Project Description",
     description1: "desc",
     details: {
