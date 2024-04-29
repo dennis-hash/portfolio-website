@@ -48,32 +48,32 @@ export class AnimationComponent implements OnInit{
   initScene() {
     // Create scene
     this.scene = new THREE.Scene();
-    this.scene.background = new THREE.Color(0xF0E7DB); // Default background color
+    this.scene.background = new THREE.Color(0xF0E7D0); // Default background color
 
     // Create camera
     this.camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-    this.camera.position.set(5, 5, 5);
+    this.camera.position.set(5, 5, 15);
 
     // Create renderer
     this.renderer = new THREE.WebGLRenderer({ canvas: this.canvasRef?.nativeElement, antialias: true });
-    this.renderer.setSize(window.innerWidth * 0.4, window.innerHeight * 0.7);
+    this.renderer.setSize(window.innerWidth * 0.5, window.innerHeight * 0.7);
 
     // Create controls
     this.controls = new OrbitControls(this.camera, this.renderer.domElement);
     this.controls.update();
 
      // Add ambient light
-    const ambientLight = new THREE.AmbientLight(0xffffff, 0.7); // soft white light
+    const ambientLight = new THREE.AmbientLight(0xffffff, 0.9); // soft white light
     this.scene.add(ambientLight);
 
     // Add directional light
-    const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
-    directionalLight.position.set(0, 1, 0); // Adjust the position as needed
+    const directionalLight = new THREE.DirectionalLight(0xffffff, 5);
+    directionalLight.position.set(0, -1, -1); // Adjust the position as needed
     this.scene.add(directionalLight);
 
      // Add point light to illuminate the back
     const pointLight = new THREE.PointLight(0xffffff, 0.6, 10);
-    pointLight.position.set(1, 1, 5); // Position the light to target the back side
+    pointLight.position.set(0, -5, -5); // Position the light to target the back side
     this.scene.add(pointLight);
   }
 
