@@ -2,7 +2,9 @@
    
     <div class="two-columns" >
       <div *ngFor="let project of getProjects()" class="grid-item" (click)="onSelect(project.id)" routerLink="/project-details">
-          <img [src]="project.image" alt="{{ project.title }}" style="width: 100%; height: 70%; border-radius: 10px;">
+        <div style="display: flex; justify-content: center;">
+          <img [src]="project.image" alt="{{ project.title }}" style="width: 80%; height: auto; border-radius: 10px;">
+        </div>
           <div class="title"  style="font-family: RobotoMono;">{{ project.title }}</div>
           <div class="description"  style="font-family: RobotoMono;">{{ project.description }}</div>
         </div>

@@ -12,10 +12,14 @@ export class ProjectService {
           year:'2023',
           role:'Designed and built the back-end',
           description: 'An innovative app for management of site like work places',
-          description1: '(Version 2 Coming soon!) The SITE MANAGER app is an innovative tool designed to enhance the organization and management of site-like work places, which typically feature a contractor or project owner responsible for project finances, a foreman overseeing daily operations, workers earning wages on a daily or hourly basis, payment distribution at regular intervals (usually weekly), and daily clock-ins for workers. The contractor or project owner relies on receiving a list of workers and their pay rates in order to effectively allocate funds and ensure timely payment processing.',
+          description1: 'The SITE MANAGER app is an innovative tool designed to enhance the organization and management of site-like work places, which typically feature a contractor or project owner responsible for project finances, a foreman overseeing daily operations, workers earning wages on a daily or hourly basis, payment distribution at regular intervals (usually weekly), and daily clock-ins for workers. The contractor or project owner relies on receiving a list of workers and their pay rates in order to effectively allocate funds and ensure timely payment processing.',
           image: 'assets/sitem/S0.png',
           details: {
-            images: ['assets/sitem/s1.webp', 'assets/sitem/s2.webp', 'assets/sitem/s3.webp', 'assets/sitem/s4.webp', 'assets/sitem/s5.webp', 'assets/sitem/s6.webp', 'assets/sitem/s7.webp'],
+            images: ['assets/sitem/S3.jpeg', 'assets/sitem/S4.jpeg','assets/sitem/S11.jpeg',  'assets/sitem/S8.jpeg', 'assets/sitem/S6.jpeg', 'assets/sitem/S1.jpeg',
+            'assets/sitem/S10.jpeg','assets/sitem/S12.jpeg','assets/sitem/S13.jpeg', 'assets/sitem/S14.jpeg','assets/sitem/S15.jpeg','assets/sitem/S17.jpeg','assets/sitem/S18.jpeg'
+            ,'assets/sitem/S20.jpeg','assets/sitem/S21.jpeg','assets/sitem/S22.jpeg','assets/sitem/S23.jpeg','assets/sitem/S24.jpeg','assets/sitem/S25.jpeg','assets/sitem/S26.jpeg','assets/sitem/S7.jpeg','assets/sitem/S5.jpeg','assets/sitem/S27.jpeg',
+          ],
+
             technologies: ['Flutter', 'Laravel','MySQL','Daraja B2C & C2B APIs'],
             github: 'https://github.com/username/project1',
             document: null,
@@ -47,7 +51,7 @@ export class ProjectService {
           year:'2023',
           role:'Designed and built the back-end',
           description: 'PropEase app helps users find properties for sale, rent, shops, Airbnb, etc',
-          description1: '(Still under develpment!) PropEase app allows users to find properties that are on sale, rentals, shops, airbnb etc. Anyone can upload their property and connect with potential customers.',
+          description1: 'PropEase app allows users to find properties that are on sale, rentals, shops, airbnb etc. Anyone can upload their property and connect with potential customers.',
           image: 'assets/propease/propease.png',
           details: {
             images: ['assets/propease/S0.webp', 'assets/propease/S1.webp', 'assets/propease/S2.webp', 
