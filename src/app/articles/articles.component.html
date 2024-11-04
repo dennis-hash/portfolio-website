@@ -1,4 +1,14 @@
-<div class="hello"  style="display: flex; justify-content: center; align-items: center; border-radius: 10px; border: none; text-align: center;width: 65%; height: 50px;  backdrop-filter: blur(20px);">
-      <a>Work in progress</a>
-  </div>
+<div class="containerr">
+    <div class="hello" >
+    <div *ngFor="let article of articles">
+        <a [href]="article.link" target="_blank" rel="noopener noreferrer">
+          {{ article.title }}
+        </a>
+        <hr />
+      </div>
+     
+      
+    </div>
+      
+</div>
 

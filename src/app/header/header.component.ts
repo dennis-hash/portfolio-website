@@ -43,7 +43,6 @@ export class HeaderComponent {
   goToArticles(){
     this.router.navigate(['articles']);
     this.selectedLink = 'articles';
-    
   }
 
 

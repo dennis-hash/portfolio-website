@@ -1,19 +1,36 @@
 
 
-
-/* Main container styling */
-.container-fluid {
-  background-color: #f4f1f7;
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: 100%;
 }
 
-/* Animation container styling */
-.animation-container {
-  top: 0;
-  height: 100vh;
-  background-color: #fff; /* Adjust as needed */
+.hello{
+  display: flex;
+  flex: 1;
+  margin-top: 60px auto;
+  padding-top: 3rem;
+
 }
 
-/* Content container styling */
-.content-container {
-  background-color: #fff; /* Adjust as needed */
+.animation {
+  flex: 0 0 33.33%; 
+  position: fixed;
+  top: 50;
+  padding-right: 2rem;
+  border: 2px solid black;
+
+}
+
+.content {
+  flex: 1;
+  text-align: start;
+  padding-top: 30px;
+  padding-left: 50px;
+  width: auto;
+  margin-left: 20px;
+  border: 2px solid black;
+  
 }

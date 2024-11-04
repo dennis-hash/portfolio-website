@@ -52,23 +52,23 @@ export class AnimationComponent implements OnInit{
 
     // Create camera
     this.camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-    this.camera.position.set(5, 5, 15);
+    this.camera.position.set(6, 12, 12);
 
     // Create renderer
     this.renderer = new THREE.WebGLRenderer({ canvas: this.canvasRef?.nativeElement, antialias: true });
-    this.renderer.setSize(window.innerWidth * 0.5, window.innerHeight * 0.7);
+    this.renderer.setSize(window.innerWidth * 0.3, window.innerHeight * 0.5);
 
     // Create controls
     this.controls = new OrbitControls(this.camera, this.renderer.domElement);
     this.controls.update();
 
      // Add ambient light
-    const ambientLight = new THREE.AmbientLight(0xffffff, 0.9); // soft white light
+    const ambientLight = new THREE.AmbientLight(0xffffff, 1); // soft white light
     this.scene.add(ambientLight);
 
     // Add directional light
     const directionalLight = new THREE.DirectionalLight(0xffffff, 5);
-    directionalLight.position.set(0, -1, -1); // Adjust the position as needed
+    directionalLight.position.set(0, -2, -2); // Adjust the position as needed
     this.scene.add(directionalLight);
 
      // Add point light to illuminate the back
@@ -86,7 +86,7 @@ export class AnimationComponent implements OnInit{
       'assets/newgltf.gltf',
       (gltf) => {
         // Add loaded model to the scene
-        gltf.scene.scale.set(1, 1, 1);
+        gltf.scene.scale.set(2, 2, 2);
         this.scene.add(gltf.scene);
       },
       undefined,
@@ -99,7 +99,7 @@ export class AnimationComponent implements OnInit{
   render() {
     const animate = () => {
       requestAnimationFrame(animate);
-      this.scene.rotation.y += 0.007;
+      this.scene.rotation.y += 0.008;
       this.controls.update();
       this.renderer.render(this.scene, this.camera);
     };

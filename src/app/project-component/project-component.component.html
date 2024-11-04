@@ -1,6 +1,6 @@
-
-   
-    <div class="two-columns" >
+<div class="containerr">
+  <div>
+       <div class="two-columns" >
       <div *ngFor="let project of getProjects()" class="grid-item" (click)="onSelect(project.id)" routerLink="/project-details">
         <div style="display: flex; justify-content: center;">
           <img [src]="project.image" alt="{{ project.title }}" style="width: 80%; height: auto; border-radius: 10px;">
@@ -10,6 +10,8 @@
         </div>
         
       </div>
+    </div>
+    </div>
 
 
 

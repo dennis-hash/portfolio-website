@@ -6,13 +6,7 @@
     backdrop-filter: blur(10px);
     z-index: 2;
   }
-  // .navbar {
-  //   width: 100%;
-  //     position: fixed;
-  //     background-color: #20202380;
-  //     backdrop-filter: blur(10px);
-  //     z-index: 2;
-  //   }
+
   
   .container {
     display: flex;
@@ -21,6 +15,7 @@
     margin: 0 auto;
     justify-content: space-between;
     align-items: center;
+   
     height: 40px;
   }
   
