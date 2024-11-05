@@ -20,8 +20,8 @@
     color: blue;
 }
 
-.disabled-link {
+.links disabled-link {
     pointer-events: none;
-    color: red;
+    border-color: yellow;
     cursor: not-allowed;
 }

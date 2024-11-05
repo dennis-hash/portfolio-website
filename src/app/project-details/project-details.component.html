@@ -12,26 +12,26 @@
     </ul> 
     
     <div class="links">
-        <a [href]="project?.details?.github || '#'" 
-           [ngClass]="{'disabled-link': !project?.details?.github}" 
+        <a *ngIf="project?.details?.github"
+           [href]="project?.details?.github" 
            style="border: 1px solid black; border-radius: 3px; padding: 5px; margin-right: 10px; color: black; text-decoration: none;">
             Code <fa-icon [icon]="faExternalLink"></fa-icon>
         </a>
         
-        <a [href]="project?.details?.document || '#'" 
-           [ngClass]="{'disabled-link': !project?.details?.document}" 
+        <a *ngIf="project?.details?.document"
+           [href]="project?.details?.document" 
            style="border: 1px solid black; border-radius: 3px; padding: 5px; margin-right: 10px; color: black; text-decoration: none;">
             Document <fa-icon [icon]="faExternalLink"></fa-icon>
         </a>
         
-        <a [href]="project?.details?.apiDocument || '#'" 
-           [ngClass]="{'disabled-link': !project?.details?.apiDocument}" 
+        <a *ngIf="project?.details?.apiDocument"
+           [href]="project?.details?.apiDocument" 
            style="border: 1px solid black; border-radius: 3px; padding: 5px; margin-right: 10px; color: black; text-decoration: none;">
             Api Docs <fa-icon [icon]="faExternalLink"></fa-icon>
         </a>
         
-        <a [href]="project?.details?.website || '#'" 
-           [ngClass]="{'disabled-link': !project?.details?.website}" 
+        <a *ngIf="project?.details?.website"
+           [href]="project?.details?.website" 
            style="border: 1px solid black; border-radius: 3px; padding: 5px; color: black; text-decoration: none;">
             Live <fa-icon [icon]="faExternalLink"></fa-icon>
         </a>
