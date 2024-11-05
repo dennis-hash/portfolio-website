@@ -42,7 +42,7 @@ export class ProjectService {
             github: 'https://github.com/dennis-hash/Task-Pro-API',
             document: 'https://docs.google.com/document/d/123xVrphTMIQnbXv8QIgALipTOG3dvsMdxyGwRYFvTFQ/edit?usp=sharing',
             apiDocument: '',
-            website: ''
+            website: 'https://task-pro-frontend-i7y2.vercel.app/'
           }
         },
         {
