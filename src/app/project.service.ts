@@ -21,7 +21,7 @@ export class ProjectService {
           ],
 
             technologies: ['Flutter', 'Laravel','MySQL','Daraja B2C & C2B APIs'],
-            github: 'https://github.com/username/project1',
+            github: '',
             document: null,
             apiDocument: 'http://172.105.90.112/site-manager-backend/SiteManager/public/swagger/',
             website: 'https://play.google.com/store/apps/details?id=com.sitemaster.sma&pcampaignid=web_share'
@@ -41,8 +41,8 @@ export class ProjectService {
             technologies: ['Angular', 'Spring boot','MySQL'],
             github: 'https://github.com/dennis-hash/Task-Pro-API',
             document: 'https://docs.google.com/document/d/123xVrphTMIQnbXv8QIgALipTOG3dvsMdxyGwRYFvTFQ/edit?usp=sharing',
-            apiDocument: 'http://172.105.90.112/site-manager-backend/SiteManager/public/swagger/',
-            website: 'https://play.google.com/store/apps/details?id=com.sitemaster.sma&pcampaignid=web_share'
+            apiDocument: '',
+            website: ''
           }
         },
         {
@@ -57,9 +57,9 @@ export class ProjectService {
             images: ['assets/propease/S0.webp', 'assets/propease/S1.webp', 'assets/propease/S2.webp', 
             'assets/propease/S3.webp', 'assets/propease/S4.webp'],
             technologies: ['Kotlin', 'Spring Boot','MySQL','Rabit MQ','Daraja APIs'],
-            github: 'https://github.com/username/project1',
-            document: 'https://github.com/username/project1',
-            apiDocument: 'http://172.105.90.112/site-manager-backend/SiteManager/public/swagger/',
+            github: '',
+            document: '',
+            apiDocument: '',
             website: 'https://play.google.com/store/apps/details?id=com.propertymanagement.tms&pcampaignid=web_share'
           }
         },
@@ -74,10 +74,10 @@ export class ProjectService {
           details: {
             images: ['assets/cashLedger//S0.png', 'assets/cashLedger/S1.png', ],
             technologies: ['Flutter', 'NodeJS','DialogFlow', 'Firebase'],
-            github: 'https://github.com/dennis-hash/UoNchatbot',
-            document: 'https://docs.google.com/document/d/1xQl-kLcCsFu4nw_OE-GsxeT492bLQ9b8T2dn0sVimz0/edit?usp=sharing',
-            apiDocument: 'http://172.105.90.112/site-manager-backend/SiteManager/public/swagger/',
-            website: 'https://play.google.com/store/apps/details?id=com.propertymanagement.tms&pcampaignid=web_share'
+            github: 'https://github.com/dennis-hash/CashLedger-backend-Java-',
+            document: '',
+            apiDocument: '',
+            website: 'https://play.google.com/store/apps/details?id=com.records.pesa&pcampaignid=web_share'
           }
         },
         {
@@ -93,8 +93,8 @@ export class ProjectService {
             technologies: ['Flutter', 'NodeJS','DialogFlow', 'Firebase'],
             github: 'https://github.com/dennis-hash/UoNchatbot',
             document: 'https://docs.google.com/document/d/1xQl-kLcCsFu4nw_OE-GsxeT492bLQ9b8T2dn0sVimz0/edit?usp=sharing',
-            apiDocument: 'http://172.105.90.112/site-manager-backend/SiteManager/public/swagger/',
-            website: 'https://play.google.com/store/apps/details?id=com.propertymanagement.tms&pcampaignid=web_share'
+            apiDocument: '',
+            website: ''
           }
         },
         {
@@ -106,12 +106,12 @@ export class ProjectService {
           description1: 'This app is a voice-controlled food ordering chatbot designed to streamline the ordering process for restaurants and customers. By using voice commands, customers can browse menus, place orders with special requests, and receive confirmations - all through a convenient mobile app. This not only improves customer experience but also reduces workload for restaurant staff and ensures order accuracy.',
           image: 'assets/MenuMe/sd.png',
           details: {
-            images: ['assets/MenuMe/S1.jpeg', 'assets/MenuMe/S2.jpeg', 'assets/MenuMe/S3.png', 'assets/MenuMe/S4.jpeg', ],
+            images: ['assets/MenuMe/S2.jpeg','assets/MenuMe/S1.jpeg', 'assets/MenuMe/S3.png', 'assets/MenuMe/S4.jpeg', ],
             technologies: ['Flutter', 'NodeJS','DialogFlow', 'Firebase'],
             github: 'https://github.com/dennis-hash/FoodOderingApp-with-an-AI-Agent',
             document: 'https://docs.google.com/document/d/1cp7ciN7PnTkm4Wy01GYS_-r8Y9EDx_pt_io-EU7Ko8g/edit?usp=sharing',
-            apiDocument: 'null',
-            website: 'null'
+            apiDocument: '',
+            website: ''
           }
         },
 

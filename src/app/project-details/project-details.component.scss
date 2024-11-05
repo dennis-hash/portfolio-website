@@ -19,3 +19,9 @@
 .links fa-icon:hover {
     color: blue;
 }
+
+.disabled-link {
+    pointer-events: none;
+    color: red;
+    cursor: not-allowed;
+}
